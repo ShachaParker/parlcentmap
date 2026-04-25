@@ -76,7 +76,7 @@ export default function MapChart() {
   const [regions, setRegion] = useState([]);
 
   useEffect(() => {
-    csv(`/continents.csv`).then((regions) => {
+    csv(`/parlcentmap/continents.csv`).then((regions) => {
       setRegion(regions);
     });
   }, []);
