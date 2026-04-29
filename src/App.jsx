@@ -72,7 +72,7 @@ function makeThreeDigit(num) {
   }
 }
 
-export default function MapChart() {
+export function MapChart() {
   const [regions, setRegion] = useState([]);
 
   useEffect(() => {
@@ -138,5 +138,13 @@ export default function MapChart() {
       </ComposableMap>
       <Tooltip id="country-tooltip" clickable={true} float={true} opacity={0.99} />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <div className="App">
+      <MapChart />
+    </div>
   );
 }
