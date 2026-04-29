@@ -1,14 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/parlcentmap/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>parlcentmap</title>
-    <script type="module" crossorigin src="/parlcentmap/assets/index-BMXFufIX.js"></script>
-    <link rel="stylesheet" crossorigin href="/parlcentmap/assets/index-7Jch4UYt.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/parlcentmap/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParlCent React Map Demo</title>
+  <script type="module" crossorigin src="/parlcentmap/assets/index-B7hDtSKv.js"></script>
+  <link rel="stylesheet" crossorigin href="/parlcentmap/assets/index-abKh-G3g.css">
+</head>
+
+<body>
+  <h1>ParlCent React Map Demo</h1>
+
+  <div>
+  </div>
+  <div class="text-container">
+    <p>This is a simple interactible React web app that replicates the world map on the home page of the <a
+        href="https://parlcent.org">Parliamentary Centre</a>.<br>It reads a CSV dataset to paint each region a
+      distinct
+      color according to how it looks on the site, and hovering over a country will show a popup leading to the
+      organization's programs in that region.<br>Components used:</p>
+    <ul>
+      <li><a href="https://react.dev">React</a> app built with <a href="https://vite.dev">Vite</a></li>
+      <li>Map rendered with <a href="https://www.react-simple-maps.io/">React Simple Maps</a>, using a <a
+          href="https://www.kaggle.com/datasets/andradaolteanu/country-mapping-iso-continent-region/data">dataset from
+          Kaggle</a>.</li>
+      <li>Tooltips made with <a href="https://react-tooltip.com/">React Tooltip</a></li>
+    </ul>
+  </div>
+  <div id="root"></div>
+
+
+</body>
+
 </html>
